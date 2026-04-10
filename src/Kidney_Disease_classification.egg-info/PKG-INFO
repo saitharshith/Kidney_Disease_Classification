@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: Kidney_Disease_classification
+Version: 0.0.0
+Summary: A python package for CNN app
+Home-page: https://github.com/saitharshith/Kidney_Disease_Classification
+Author: saitharshith
+Author-email: sai1726791@gmail.com
+Project-URL: Bug Tracker, https://github.com/saitharshith/Kidney_Disease_Classification/issues
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# Kidney_Disease_Classification-
