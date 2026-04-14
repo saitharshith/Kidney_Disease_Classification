@@ -5,15 +5,15 @@ from Kidney_Disease_classification.pipeline.Stage_03_model_training import Model
 
 
 
-# STAGE_NAME = "Data Ingestion Stage"
-# try:
-#     logger.info(f">>>Stage {STAGE_NAME} Started <<<")
-#     obj = DataIngestionTrainingPipeline()
-#     obj.main()
-#     logger.info(f">>> Stage {STAGE_NAME} Completed<<<")
-# except Exception as e:
-#     logger.exception(e)
-#     raise e 
+STAGE_NAME = "Data Ingestion Stage"
+try:
+    logger.info(f">>>Stage {STAGE_NAME} Started <<<")
+    obj = DataIngestionTrainingPipeline()
+    obj.main()
+    logger.info(f">>> Stage {STAGE_NAME} Completed<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e 
 
 STAGE_NAME = "prepare base model"
 try:
