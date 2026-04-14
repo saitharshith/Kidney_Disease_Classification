@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/Kidney_Disease_classification/__init__.py
+src/Kidney_Disease_classification.egg-info/PKG-INFO
+src/Kidney_Disease_classification.egg-info/SOURCES.txt
+src/Kidney_Disease_classification.egg-info/dependency_links.txt
+src/Kidney_Disease_classification.egg-info/top_level.txt
+src/Kidney_Disease_classification/components/__init__.py
+src/Kidney_Disease_classification/config/__init__.py
+src/Kidney_Disease_classification/config/configuration.py
+src/Kidney_Disease_classification/constants/__init__.py
+src/Kidney_Disease_classification/entity/__init__.py
+src/Kidney_Disease_classification/pipeline/__init__.py
+src/Kidney_Disease_classification/utils/__init__.py
+src/Kidney_Disease_classification/utils/common.py
