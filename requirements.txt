@@ -1,9 +1,8 @@
 torch
 torchvision
-<<<<<<< HEAD
 tensorflow
-=======
->>>>>>> 4de6ca8d86ffd33bce56ba797e4cddfe842544eb
+opencv-python
+scikit-image
 pandas
 dvc>=3.0.0
 mlflow
