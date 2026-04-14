@@ -1,0 +1,21 @@
+torch
+torchvision
+tensorflow
+pandas
+dvc>=3.0.0
+mlflow
+notebook
+numpy
+matplotlib
+seaborn
+python-box
+pyYAML
+tqdm
+ensure
+joblib
+types-PyYAML
+scipy
+Flask
+Flask-Cors
+gdown
+-e . 
