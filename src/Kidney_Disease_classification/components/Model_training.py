@@ -20,15 +20,12 @@ class Training:
         train_dir = Path(self.config.training_data)
         classes = ['Normal', 'Cyst', 'Stone', 'Tumor']
         data = []
-        # Read images and assign labels
         for class_name in classes:
             class_dir = train_dir / class_name
             for img_path in class_dir.glob('*.jpg'):
-                # flow_from_dataframe requires string labels for categorical classification
                 data.append((str(img_path), class_name))
 
         df = pd.DataFrame(data, columns=['image', 'label'])
-        # Shuffle the full dataset
         df = df.sample(frac=1.0, random_state=42).reset_index(drop=True)
         train_df, temp_df = train_test_split(df, test_size=0.3, random_state=42, stratify=df['label'])
         val_df, test_df = train_test_split(temp_df, test_size=0.5, random_state=42, stratify=temp_df['label'])
@@ -41,6 +38,8 @@ class Training:
         self.train_df = train_df
         self.val_df = val_df
         self.test_df = test_df
+        test_csv_path = Path(self.config.root_dir) / "test_data.csv"
+        self.test_df.to_csv(test_csv_path, index=False)
         datagenerator_kwargs = dict(rescale=1./255)
         dataflow_kwargs = dict(
             x_col='image',
