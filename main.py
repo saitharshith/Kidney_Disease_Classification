@@ -9,35 +9,35 @@ load_dotenv()
 os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/Sai_Tharshith_97/Kidney_Disease_Classification.mlflow"
 if __name__ == '__main__':
     
-    STAGE_NAME = "Data Ingestion Stage"
-    try:
-        logger.info(f">>> Stage {STAGE_NAME} Started <<<")
-        obj = DataIngestionTrainingPipeline()
-        obj.main()
-        logger.info(f">>> Stage {STAGE_NAME} Completed <<<\n\nx==========x")
-    except Exception as e:
-        logger.exception(e)
-        raise e 
+    # STAGE_NAME = "Data Ingestion Stage"
+    # try:
+    #     logger.info(f">>> Stage {STAGE_NAME} Started <<<")
+    #     obj = DataIngestionTrainingPipeline()
+    #     obj.main()
+    #     logger.info(f">>> Stage {STAGE_NAME} Completed <<<\n\nx==========x")
+    # except Exception as e:
+    #     logger.exception(e)
+    #     raise e 
 
-    STAGE_NAME = "Prepare Base Model"
-    try:
-        logger.info(f">>> Stage {STAGE_NAME} Started <<<")
-        obj = PrepareBaseModelPipeline()
-        obj.main()
-        logger.info(f">>> Stage {STAGE_NAME} Completed <<<\n\nx==========x")
-    except Exception as e:
-        logger.exception(e)
-        raise e
+    # STAGE_NAME = "Prepare Base Model"
+    # try:
+    #     logger.info(f">>> Stage {STAGE_NAME} Started <<<")
+    #     obj = PrepareBaseModelPipeline()
+    #     obj.main()
+    #     logger.info(f">>> Stage {STAGE_NAME} Completed <<<\n\nx==========x")
+    # except Exception as e:
+    #     logger.exception(e)
+    #     raise e
 
-    STAGE_NAME = "Training Pipeline Stage"
-    try:
-        logger.info(f">>> Stage {STAGE_NAME} Started <<<")
-        obj = ModelTrainingPipeline()
-        obj.main()
-        logger.info(f">>> Stage {STAGE_NAME} Completed <<<\n\nx==========x")
-    except Exception as e:
-        logger.exception(e)
-        raise e
+    # STAGE_NAME = "Training Pipeline Stage"
+    # try:
+    #     logger.info(f">>> Stage {STAGE_NAME} Started <<<")
+    #     obj = ModelTrainingPipeline()
+    #     obj.main()
+    #     logger.info(f">>> Stage {STAGE_NAME} Completed <<<\n\nx==========x")
+    # except Exception as e:
+    #     logger.exception(e)
+    #     raise e
 
     STAGE_NAME = "Evaluation Stage"
     try:

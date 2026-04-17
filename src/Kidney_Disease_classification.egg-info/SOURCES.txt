@@ -6,6 +6,7 @@ src/Kidney_Disease_classification.egg-info/SOURCES.txt
 src/Kidney_Disease_classification.egg-info/dependency_links.txt
 src/Kidney_Disease_classification.egg-info/top_level.txt
 src/Kidney_Disease_classification/components/Data_ingestion.py
+src/Kidney_Disease_classification/components/Model_Evaluation.py
 src/Kidney_Disease_classification/components/Model_training.py
 src/Kidney_Disease_classification/components/Prepare_Base_Model.py
 src/Kidney_Disease_classification/components/__init__.py
@@ -17,6 +18,7 @@ src/Kidney_Disease_classification/entity/config_entity.py
 src/Kidney_Disease_classification/pipeline/Stage_01_data_ingestion.py
 src/Kidney_Disease_classification/pipeline/Stage_02_prepare_base_model.py
 src/Kidney_Disease_classification/pipeline/Stage_03_model_training.py
+src/Kidney_Disease_classification/pipeline/Stage_04_model_evaluation.py
 src/Kidney_Disease_classification/pipeline/__init__.py
 src/Kidney_Disease_classification/utils/__init__.py
 src/Kidney_Disease_classification/utils/common.py
