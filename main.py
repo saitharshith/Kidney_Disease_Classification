@@ -1,12 +1,12 @@
 import os
-from dotenv import load_dotenv 
 from Kidney_Disease_classification import logger
 from Kidney_Disease_classification.pipeline.Stage_01_data_ingestion import DataIngestionTrainingPipeline
 from Kidney_Disease_classification.pipeline.Stage_02_prepare_base_model import PrepareBaseModelPipeline
 from Kidney_Disease_classification.pipeline.Stage_03_model_training import ModelTrainingPipeline
 from Kidney_Disease_classification.pipeline.Stage_04_model_evaluation import ModelEvaluationPipeline
-load_dotenv() 
 os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/Sai_Tharshith_97/Kidney_Disease_Classification.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="Sai_Tharshith_97"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="e52484c4f5ab4f41ecf3137ca21f3cc296408074"
 if __name__ == '__main__':
     STAGE_NAME = "Data Ingestion Stage"
     try:
