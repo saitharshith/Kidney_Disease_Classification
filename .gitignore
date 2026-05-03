@@ -206,6 +206,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-artifacts/*
+artifacts/* 
 reseach/kideny-ct-scan-data.zip
 research/mlflow.db
