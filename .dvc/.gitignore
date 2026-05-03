@@ -1,3 +1,5 @@
 /config.local
 /tmp
 /cache
+artifacts/data_ingestion
+research/mlflow.db
