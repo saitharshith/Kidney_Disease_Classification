@@ -47,7 +47,7 @@ class Evaluation:
         self.model = self.load_model(self.config.path_of_model)
         self._test_generator()
         self.score = self.model.evaluate(self.test_generator)
-        save_json(path=Path("scores.json"), data={"loss": self.score[0], "accuracy": self.score[1]})
+        save_json(path=Path("scores.json"), data={"loss": self.score[0], "accuracy": self.score[1], "AUC": self.score[2], "Precision": self.score[3], "Recall": self.score[4]})
 
     def log_into_mlflow(self):
         """Pushes parameters, metrics, and registers the model to the remote MLflow server."""
@@ -63,7 +63,7 @@ class Evaluation:
             mlflow.log_params(self.config.all_params)
             # Log calculated metrics (Loss & Accuracy)
             mlflow.log_metrics(
-                {"loss": self.score[0], "accuracy": self.score[1]}
+                {"loss": self.score[0], "accuracy": self.score[1], "AUC": self.score[2], "Precision": self.score[3], "Recall": self.score[4]}
             )
             # 2. Model Registry Logic
             # Model registry does not work with a local file store
