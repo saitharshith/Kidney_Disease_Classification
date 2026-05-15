@@ -91,7 +91,7 @@ class Training:
         self.model.compile(
             optimizer=fresh_optimizer,
             loss='categorical_crossentropy',
-            metrics=['accuracy']
+            metrics=['accuracy','AUC', tf.keras.metrics.Precision(), tf.keras.metrics.Recall()]
         )
         self.model.fit(
             self.train_generator,
